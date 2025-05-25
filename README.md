@@ -83,14 +83,3 @@ Before running the application, configure your IMAP and Elasticsearch settings i
    npm start
    ```
 
-## Demo
-
-A demo video showcasing the functionalities of the Email Onebox App will be provided separately.
-
-## Contribution
-
-Feel free to contribute to the project by submitting issues or pull requests. Your feedback and suggestions are welcome!
-
-## License
-
-This project is licensed under the MIT License.
