@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - IMAP_HOST=your_imap_host
+      - IMAP_USER=your_imap_user
+      - IMAP_PASS=your_imap_password
+      - ELASTICSEARCH_HOST=elasticsearch:9200
+    depends_on:
+      - elasticsearch
+
+  elasticsearch:
+    image: elasticsearch:7.10.1
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+
+volumes:
+  esdata:
+    driver: local

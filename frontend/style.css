@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header {
+  background: #1976d2;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+main {
+  display: flex;
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  min-height: 500px;
+}
+
+aside#email-list {
+  width: 320px;
+  border-right: 1px solid #eee;
+  padding: 1.5rem 1rem;
+  background: #fafbfc;
+}
+
+#email-list h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #1976d2;
+}
+
+#emails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#emails li {
+  padding: 0.7rem 0.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#emails li:hover, #emails li.selected {
+  background: #e3f2fd;
+}
+
+#emails .subject {
+  font-weight: 600;
+  color: #1976d2;
+}
+
+#emails .from {
+  font-size: 0.95em;
+  color: #555;
+}
+
+section#email-detail {
+  flex: 1;
+  padding: 2rem;
+}
+
+.email-detail h2 {
+  margin-top: 0;
+  color: #1976d2;
+}
+
+.email-detail .meta {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.email-detail .body {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.email-detail .category {
+  display: inline-block;
+  padding: 0.2em 0.7em;
+  border-radius: 12px;
+  font-size: 0.9em;
+  background: #e3f2fd;
+  color: #1976d2;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 1rem 0;
+  font-size: 0.95em;
+}

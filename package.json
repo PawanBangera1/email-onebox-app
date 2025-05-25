@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@elastic/elasticsearch": "^9.0.2",
+    "imap": "^0.8.19",
+    "mailparser": "^3.7.3",
+    "socket.io": "^4.8.1",
+    "tsyringe": "^4.10.0"
+  },
+  "devDependencies": {
+    "@types/imap": "^0.8.42",
+    "@types/mailparser": "^3.4.6",
+    "@types/socket.io": "^3.0.1"
+  }
+}
